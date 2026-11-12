@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="KleeneStar.Theme.Test/KleeneStar.Theme.Test.csproj" />
+  <Project Path="KleeneStar.Theme/KleeneStar.Theme.csproj" />
+</Solution>

@@ -1,0 +1,11 @@
+﻿# de-DE language resource file
+plugin.name=KleeneStar.Theme
+plugin.description=Jahreszeitliche Farbschemata für KleeneStar - Frühling, Sommer, Herbst und Winter, jeweils hell und dunkel.
+theme.autumn.description=Warme Cremeflächen mit Apricot, Salbeigrün und herbstlichen Terrakotta-Akzenten.
+theme.autumn.name=Herbst
+theme.spring.description=Zarte Blütenfarben mit frischem Grün, Flieder und einem rosafarbenen Kopfbereich.
+theme.spring.name=Frühling
+theme.summer.description=Helle Sandtöne mit Türkis, Himmelblau, Sonnengelb und Korallenakzenten.
+theme.summer.name=Sommer
+theme.winter.description=Schneeweiße Flächen mit Eisblau, kühlem Grau und dezenten Beerenakzenten.
+theme.winter.name=Winter

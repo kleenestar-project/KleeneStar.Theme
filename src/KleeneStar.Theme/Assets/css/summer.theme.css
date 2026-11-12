@@ -1,0 +1,225 @@
+/* KleeneStar Summer - a seasonal colour scheme of the KleeneStar.Theme plugin, taken over from the
+   WebExpress UI tutorial and fitted to KleeneStar's header and pages.
+
+   the sheet is served at /kleenestar/kleenestar.theme/assets/css/ and replaces the framework's
+   default theme stylesheet instead of adding to it, so the application layout is imported first;
+   three levels up is the application root, where the webapp plugin mounts its assets */
+@import url("../../../webexpress.webapp/assets/css/webexpress.webapp.theme.css");
+
+:root, [data-wx-theme="light"] {
+    --wx-body-bg: #fffdf5;
+    --wx-body-bg-rgb: 255, 253, 245;
+    --wx-body-color: #183e43;
+    --wx-body-color-rgb: 24, 62, 67;
+    --wx-secondary-bg: #e2f2ee;
+    --wx-tertiary-bg: #f3f8ed;
+    --wx-secondary-color: #48676b;
+    --wx-secondary-color-rgb: 72, 103, 107;
+    --wx-tertiary-color: #526e71;
+    --wx-emphasis-color: #103238;
+    --wx-heading-color: #175b62;
+    --wx-border-color: #afccc6;
+    --wx-border-color-translucent: rgba(23, 91, 98, 0.22);
+    --wx-link-color: #12636d;
+    --wx-link-color-rgb: 18, 99, 109;
+    --wx-link-hover-color: #0c4b53;
+    --wx-code-color: #985249;
+    --wx-highlight: #f8d976;
+    --wx-highlight-rgb: 248, 217, 118;
+    --wx-highlight-contrast: #183e43;
+    --wx-app-splash: #237981;
+    --wx-gray: #597c80;
+    --wx-gray-100: #fffdf5;
+    --wx-gray-200: #f3f8ed;
+    --wx-gray-300: #e2f2ee;
+    --wx-gray-400: #afccc6;
+    --wx-gray-500: #8eb1b1;
+    --wx-gray-600: #597c80;
+    --wx-gray-700: #48676b;
+    --wx-gray-800: #284e54;
+    --wx-gray-900: #183e43;
+    --wx-dropdown-shadow: 0 4px 12px rgba(24, 62, 67, 0.14);
+    --wx-primary: #83d8d0;
+    --wx-primary-rgb: 131, 216, 208;
+    --wx-primary-contrast: #183e43;
+    --wx-primary-bg-subtle: #dff6f1;
+    --wx-primary-border-subtle: #4aaba5;
+    --wx-primary-text-emphasis: #135d5c;
+    --wx-secondary: #b9d9ed;
+    --wx-secondary-rgb: 185, 217, 237;
+    --wx-secondary-contrast: #183e43;
+    --wx-secondary-bg-subtle: #e6f2fa;
+    --wx-secondary-border-subtle: #7caac5;
+    --wx-secondary-text-emphasis: #315d78;
+    --wx-success: #b7dda2;
+    --wx-success-rgb: 183, 221, 162;
+    --wx-success-contrast: #183e43;
+    --wx-success-bg-subtle: #eaf6e3;
+    --wx-success-border-subtle: #81ae68;
+    --wx-success-text-emphasis: #385f27;
+    --wx-info: #a4dfee;
+    --wx-info-rgb: 164, 223, 238;
+    --wx-info-contrast: #183e43;
+    --wx-info-bg-subtle: #e2f6fc;
+    --wx-info-border-subtle: #6eb3c8;
+    --wx-info-text-emphasis: #285e70;
+    --wx-warning: #f8d976;
+    --wx-warning-rgb: 248, 217, 118;
+    --wx-warning-contrast: #183e43;
+    --wx-warning-bg-subtle: #fff6d7;
+    --wx-warning-border-subtle: #c4a03f;
+    --wx-warning-text-emphasis: #69521a;
+    --wx-danger: #f3b1a0;
+    --wx-danger-rgb: 243, 177, 160;
+    --wx-danger-contrast: #183e43;
+    --wx-danger-bg-subtle: #ffebe3;
+    --wx-danger-border-subtle: #ce8878;
+    --wx-danger-text-emphasis: #7d4135;
+    --wx-light: #f3f8ed;
+    --wx-light-rgb: 243, 248, 237;
+    --wx-light-contrast: #183e43;
+    --wx-light-bg-subtle: #fffdf5;
+    --wx-light-border-subtle: #afccc6;
+    --wx-light-text-emphasis: #48676b;
+    --wx-dark: #183e43;
+    --wx-dark-rgb: 24, 62, 67;
+    --wx-dark-contrast: #fffdf5;
+    --wx-dark-bg-subtle: #d5e8e7;
+    --wx-dark-border-subtle: #8eb1b1;
+    --wx-dark-text-emphasis: #183e43;
+}
+
+/* the navigation keeps readable ink on the pastel header */
+html[data-wx-theme="light"] #wx-header {
+    background: #c7eee5;
+    border-bottom: 1px solid var(--wx-border-color);
+}
+
+html[data-wx-theme="light"] :is(#wx-header-apptitle, #wx-header-appnavigator, #wx-header-appnavigation,
+#wx-header-search, #wx-header-notifications, #wx-header-help, #wx-header-settings, #wx-header-avatar) {
+    color: var(--wx-body-color);
+}
+
+html[data-wx-theme="light"] #wx-header-appnavigation .active {
+    color: var(--wx-link-color);
+}
+
+html[data-wx-theme="light"] #wx-header-appnavigation > *:hover:not(.wx-overflow-menu):not(.dropdown-menu):not(.wx-dropdown),
+html[data-wx-theme="light"] #wx-header-appnavigation > *:focus:not(.wx-dropdown),
+html[data-wx-theme="light"] #wx-header-appnavigation > .btn:active,
+html[data-wx-theme="light"] #wx-header-appnavigation > .wx-dropdown > .btn:is(:hover, :focus, :active),
+html[data-wx-theme="light"] :is(#wx-header-appnavigator, #wx-header-notifications, #wx-header-help,
+#wx-header-settings, #wx-header-avatar) > .btn:is(:hover, :focus, :active) {
+    background: #a6ddd3;
+}
+
+/* explicit tokens keep nested dark controls and the application palette consistent */
+[data-wx-theme="dark"] {
+    --wx-body-bg: #17282c;
+    --wx-body-bg-rgb: 23, 40, 44;
+    --wx-body-color: #e0f3ee;
+    --wx-body-color-rgb: 224, 243, 238;
+    --wx-secondary-bg: #2a4245;
+    --wx-tertiary-bg: #203438;
+    --wx-secondary-color: #adcfc9;
+    --wx-secondary-color-rgb: 173, 207, 201;
+    --wx-tertiary-color: #adcfc9;
+    --wx-emphasis-color: #e0f3ee;
+    --wx-heading-color: #e0f3ee;
+    --wx-border-color: #507f81;
+    --wx-border-color-translucent: rgba(255, 255, 255, 0.18);
+    --wx-link-color: #83d8d0;
+    --wx-link-color-rgb: 131, 216, 208;
+    --wx-link-hover-color: #e0f3ee;
+    --wx-code-color: #b9d9ed;
+    --wx-highlight: #f8d976;
+    --wx-highlight-rgb: 248, 217, 118;
+    --wx-highlight-contrast: #183e43;
+    --wx-app-splash: #203438;
+    --wx-gray: #597c80;
+    --wx-gray-100: #fffdf5;
+    --wx-gray-200: #f3f8ed;
+    --wx-gray-300: #e2f2ee;
+    --wx-gray-400: #afccc6;
+    --wx-gray-500: #8eb1b1;
+    --wx-gray-600: #597c80;
+    --wx-gray-700: #507f81;
+    --wx-gray-800: #203438;
+    --wx-gray-900: #17282c;
+    --wx-dropdown-shadow: 0 4px 12px rgba(0, 0, 0, 0.45);
+    --wx-primary: #83d8d0;
+    --wx-primary-rgb: 131, 216, 208;
+    --wx-primary-contrast: #183e43;
+    --wx-primary-bg-subtle: #2a484a;
+    --wx-primary-border-subtle: #528986;
+    --wx-primary-text-emphasis: #83d8d0;
+    --wx-secondary: #b9d9ed;
+    --wx-secondary-rgb: 185, 217, 237;
+    --wx-secondary-contrast: #183e43;
+    --wx-secondary-bg-subtle: #34484f;
+    --wx-secondary-border-subtle: #708996;
+    --wx-secondary-text-emphasis: #b9d9ed;
+    --wx-success: #b7dda2;
+    --wx-success-rgb: 183, 221, 162;
+    --wx-success-contrast: #183e43;
+    --wx-success-bg-subtle: #344941;
+    --wx-success-border-subtle: #6f8c6d;
+    --wx-success-text-emphasis: #b7dda2;
+    --wx-info: #a4dfee;
+    --wx-info-rgb: 164, 223, 238;
+    --wx-info-contrast: #183e43;
+    --wx-info-bg-subtle: #30494f;
+    --wx-info-border-subtle: #658d97;
+    --wx-info-text-emphasis: #a4dfee;
+    --wx-warning: #f8d976;
+    --wx-warning-rgb: 248, 217, 118;
+    --wx-warning-contrast: #183e43;
+    --wx-warning-bg-subtle: #404839;
+    --wx-warning-border-subtle: #938955;
+    --wx-warning-text-emphasis: #f8d976;
+    --wx-danger: #f3b1a0;
+    --wx-danger-rgb: 243, 177, 160;
+    --wx-danger-contrast: #183e43;
+    --wx-danger-bg-subtle: #3f4141;
+    --wx-danger-border-subtle: #90736c;
+    --wx-danger-text-emphasis: #f3b1a0;
+    --wx-light: #f3f8ed;
+    --wx-light-rgb: 243, 248, 237;
+    --wx-light-contrast: #183e43;
+    --wx-light-bg-subtle: #3f4d4f;
+    --wx-light-border-subtle: #909a96;
+    --wx-light-text-emphasis: #e0f3ee;
+    --wx-dark: #17282c;
+    --wx-dark-rgb: 23, 40, 44;
+    --wx-dark-contrast: #e0f3ee;
+    --wx-dark-bg-subtle: #172c30;
+    --wx-dark-border-subtle: #183439;
+    --wx-dark-text-emphasis: #e0f3ee;
+}
+
+/* ================================================================ kleenestar */
+
+/* the start page signed out (LandingWelcomeFragment) is the first thing a visitor sees, so it
+   opens on the season: the header colour runs into the paper behind greeting and sign-in */
+html:not([data-wx-theme="dark"]) body:has(.ks-welcome) #wx-split-p2 {
+    background: linear-gradient(170deg, #c7eee5 0%, var(--wx-body-bg) 55%);
+}
+
+/* a dark page keeps the framework's header, so a hairline in the season's accent marks it */
+html[data-wx-theme="dark"] #wx-header {
+    border-bottom: 1px solid rgba(var(--wx-primary-rgb), 0.35);
+}
+
+/* the season's secondary is a pastel surface colour (buttons, chips); as text - section captions,
+   hints, counts, which KleeneStar and the portal colour "secondary" - it vanishes on the paper, so
+   light pages write secondary text in the theme's emphasized secondary ink */
+html:not([data-wx-theme="dark"]) .text-secondary {
+    color: var(--wx-secondary-text-emphasis) !important;
+}
+
+/* the same for outline buttons - the framework's selectors (theme, mode) are outlined in the
+   secondary colour; ink and border follow the framework's own emphasized variant */
+html:not([data-wx-theme="dark"]) .btn-outline-secondary {
+    --wx-btn-color: var(--wx-secondary-text-emphasis);
+    --wx-btn-border-color: var(--wx-secondary-border-subtle);
+}

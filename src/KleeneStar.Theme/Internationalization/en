@@ -1,0 +1,11 @@
+﻿# en-US language resource file
+plugin.name=KleeneStar.Theme
+plugin.description=Seasonal colour schemes for KleeneStar - spring, summer, autumn and winter, each in light and dark.
+theme.autumn.description=Warm cream surfaces with apricot, sage green and autumn terracotta accents.
+theme.autumn.name=Autumn
+theme.spring.description=Soft blossom colors with fresh green, lilac and a pink header.
+theme.spring.name=Spring
+theme.summer.description=Light sandy surfaces with turquoise, sky blue, sunshine yellow and coral accents.
+theme.summer.name=Summer
+theme.winter.description=Snow-white surfaces with ice blue, cool gray and subtle berry accents.
+theme.winter.name=Winter
