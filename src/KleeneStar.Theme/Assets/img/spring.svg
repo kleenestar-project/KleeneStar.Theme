@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- preview of the spring theme: header, paper, primary, secondary and success colours, heading ink -->
+  <rect x="2" y="2" width="60" height="60" rx="10" fill="#fffdf9" stroke="#425e38" stroke-opacity="0.35" stroke-width="2"/>
+  <path d="M2 12 a10 10 0 0 1 10 -10 h40 a10 10 0 0 1 10 10 v8 h-60 z" fill="#f2dce5"/>
+  <circle cx="18" cy="38" r="9" fill="#d9b4d5"/>
+  <circle cx="32" cy="38" r="9" fill="#c7d7a8"/>
+  <circle cx="46" cy="38" r="9" fill="#b3d6ad"/>
+  <rect x="12" y="52" width="40" height="4" rx="2" fill="#425e38"/>
+</svg>
